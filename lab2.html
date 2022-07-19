@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab2</title>
+    </head>
+    <body>
+        <script>
+            var rev=0;
+            var n=prompt("Give input:"," ");
+            if(!isNaN(parseInt(n))){
+                var num=parseInt(n);
+                while(num!=0){
+                    rem=num%10
+                    num=parseInt(num/10)
+                    rev=rem+rev*10
+                }
+                alert("The reversed number is "+parseInt(rev));
+            }
+            else{
+                str=n.toUpperCase();
+                for(i=0;i<str.length;i++){
+                    if(str.charAt(i)=='A'||str.charAt(i)=='E'||str.charAt(i)=='I'||str.charAt(i)=='O'||str.charAt(i)=='U'){
+                        alert("Position of alphabet "+str.charAt(i)+" is "+(i+1));
+				break;
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
