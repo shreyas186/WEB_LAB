@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab3</title>
+    </head>
+    <body>
+        <script>
+            function ADDITION(){
+                var a=parseInt(document.getElementById("val1").value);
+                var b=parseInt(document.getElementById("val1").value);
+                if(!isNaN(a) && !isNaN(b)){
+                    var c=a+b;
+                    document.getElementById("RES").value=c;
+                }
+            }
+            function SUBTRACTION(){
+                var a=parseInt(document.getElementById("val1").value);
+                var b=parseInt(document.getElementById("val1").value);
+                if(!isNaN(a) && !isNaN(b)){
+                    var c=a-b;
+                    document.getElementById("RES").value=c;
+                }
+            }
+            function MULTIPLICATION(){
+                var a=parseInt(document.getElementById("val1").value);
+                var b=parseInt(document.getElementById("val1").value);
+                if(!isNaN(a) && !isNaN(b)){
+                    var c=a*b;
+                    document.getElementById("RES").value=c;
+                }
+            }
+            function DIVISION(){
+                var a=parseInt(document.getElementById("val1").value);
+                var b=parseInt(document.getElementById("val1").value);
+                if(!isNaN(a) && !isNaN(b)){
+                    var c=a/b;
+                    document.getElementById("RES").value=c;
+                }
+            }
+            function CLEAR(){
+                val1.value="0"
+                val2.value="0"
+                RES.value="0"
+            }
+            
+        </script>
+        <center>
+            <table border="1">
+                <tr >
+                    <th colspan="4">Simple Calculator</th>
+                </tr>
+                <tr>
+                    <td>Value1</td>
+                    <td><input type="text" id="val1" value="0"/></td>
+                    <td>Value2</td>
+                    <td><input type="text" id="val2" value="0"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" id="ADD" value="ADD" onclick="ADDITION()"/></td>
+                    <td><input type="button" id="SUB" value="SUB" onclick="SUBTRACTION()"/></td>
+                    <td><input type="button" id="MUL" value="MUL" onclick="MULTIPLICATION()"/></td>
+                    <td><input type="button" id="DIV" value="DIV" onclick="DIVISION()"/></td>
+                </tr>
+                <tr>
+                    <td>Result</td>
+                    <td><input type="text" id="res" value="0"/></td>
+                    <td colspan="2"><input type="button" id="CLR" value="CLEAR" onclick="CLEAR()"/></td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>
